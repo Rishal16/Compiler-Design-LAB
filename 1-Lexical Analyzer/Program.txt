@@ -1,0 +1,8 @@
+#include<iostream>
+{
+  int a,b,c;
+  cin>>b>>c;
+  a=b+c;
+  cout<<a;
+  return 0;
+}
