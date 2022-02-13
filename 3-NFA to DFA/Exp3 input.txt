@@ -1,0 +1,44 @@
+* NFA to DFA***
+
+Enter total number of states in NFA : 3
+Enter number of elements in alphabet(no of input symbols) : 2
+For state 0
+Enter no. of output states for input a : 1
+Enter output states :
+1
+Enter no. of output states for input b : 0
+Enter output states :
+Enter no. of output states for input ^ : 0
+Enter output states :
+For state 1
+Enter no. of output states for input a : 2
+Enter output states :
+1
+2
+Enter no. of output states for input b : 1
+Enter output states :
+2
+Enter no. of output states for input ^ : 0
+Enter output states :
+For state 2
+Enter no. of output states for input a : 0
+Enter output states :
+Enter no. of output states for input b : 1
+Enter output states :
+1
+Enter no. of output states for input ^ : 0
+Enter output states :
+* TRANSITION TABLE OF NFA *
+ STATE/INPUT | a | b | ^ 
+
+ 0  | 1  |  | 
+ 1  | 1 2  | 2  | 
+ 2  |  | 1  | 
+
+* TRANSITION TABLE OF DFA *
+ STATE/INPUT | a | b 
+{ 0 }  | 1  | ^ 
+{ 1 }  | 1 2  | 2 
+{ ^ }  | ^  | ^ 
+{ 1 2 }  | 1 2  | 1 2 
+{ 2 }  | ^  | 1 
